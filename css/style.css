@@ -1,13 +1,18 @@
 table {
-    border: 1px solid black;
+    border: 1px solid white;
     table-layout: fixed;
-    width: 200px;
+    right: auto;
+    overflow: auto;
+    margin-bottom: 15px;;
 }
 
-th, td {
-    border: 1px solid black;
+td {
+    border: 1px solid #c6bdbd;
     overflow: hidden;
     width: 1px;
+}
+th{
+  display: none;
 }
 
 .pixel {
@@ -23,7 +28,21 @@ th, td {
   bottom: 13px;
 }
 
-#tabel {
-  width: 100%;
-  height:100%;
+#tabel-container {
+  overflow: auto;
 }
+
+.container-footer{
+  background-color: #737373;
+  height: 50px;
+  padding: 20px;
+  margin-top: 78px;
+  margin-right: 1px;
+  margin-left: 1px;
+  height: 80px;
+
+}
+
+
+
+

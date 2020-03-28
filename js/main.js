@@ -2,7 +2,6 @@
 buatTabel();
 
 // Inisiasi Awal Fungsi
-//buatLingkaran(5,10,10);
 //buatBresenham(10,10,150,150);
 //buatDDA(10,10,150,150);
 
@@ -80,36 +79,7 @@ function resetTabel() {
   buatTabel();
 }
 
-// Algoritma Lingkaran
-function buatLingkaran(r, xc, yc){
-  // Deklarasi Variabel
-  var r,xc,yc,p,x,y;
 
-  // Titik Awal
-  p = 1-r;
-  x = 0;
-  y = r;
-
-  while (x <= y) {
-    x = x+1;
-    if (p < 0){
-      p += 2 * x + 1;
-    } else {
-      y = y - 1;
-      p += 2 * (x - y) + 1;
-    }
-
-    // Gambar Titik
-    setInterval(buatTitik(xc + x,yc +y),1000);
-    setInterval(buatTitik(xc - x,yc +y),1000);
-    setInterval(buatTitik(xc + x,yc -y),1000);
-    setInterval(buatTitik(xc - x,yc -y),1000);
-    setInterval(buatTitik(xc + y,yc +x),1000);
-    setInterval(buatTitik(xc - y,yc +x),1000);
-    setInterval(buatTitik(xc + y,yc -x),1000);
-    setInterval(buatTitik(xc - y,yc -x),1000);
-  }
-}
 
 function buatBresenham(x1 ,y1 ,x2 ,y2) {
   var x1, y1, x2, y2, x, y, dx, dy, xend, p, duady, duadydx;
