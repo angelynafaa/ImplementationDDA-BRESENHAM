@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Komputer Grafik Simulator</title>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="css/style.css"/>
+  </head>
+  <body>
+    <center><h3 class="blue-text">Simulator Algoritma <br>DDA DAN BRESENHAM</h3></center>
+    <div class="container">
+    <div class="row center">
+      <!-- IMPLEMENTASI ALGORITHM DDA -->
+      <div class="col s12 m6">
+        <div class="card blue-grey darken-1 z-depth-3">
+          <div class="card-content white-text">
+            <span class="card-title ">DDA Algorithm</span>
+            <p></p>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="dda-x1" type="number" class="validate">
+                <label for="dda-x1">X1</label>
+              </div>
+              <div class="input-field col s12">
+                <input id="dda-y1" type="number" class="validate">
+                <label for="dda-y2">Y1</label>
+              </div>
+              <div class="input-field col s12">
+                <input id="dda-x2" type="number" class="validate">
+                <label for="dda-x2">X2</label>
+              </div>
+              <div class="input-field col s12">
+                <input id="dda-y2" type="number" class="validate">
+                <label for="dda-y2">Y2</label>
+              </div>
+            </div>
+          </div>
+          <div class="card-action">
+            <button class="btn waves-effect waves-light" id="btn-buat-dda" name="action">Submit  
+            </button>
+            <button class="btn waves-effect waves-light red" id="btn-reset" name="action">reset
+            </button>
+          </div>
+        </div>
+      </div>
+      
+
+      <!-- implementasi DDA ALGORITHM -->
+      <div class="col s12 m6">
+        <div class="card blue-grey darken-1 z-depth-3">
+          <div class="card-content white-text">
+            <span class="card-title">Bresenham Algorithm</span>
+            <p></p>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="bres-x1" type="number" class="validate">
+                <label for="bres-x1">X1</label>
+              </div>
+              <div class="input-field col s12">
+                <input id="bres-y1" type="number" class="validate">
+                <label for="bres-y2">Y1</label>
+              </div>
+              <div class="input-field col s12">
+                <input id="bres-x2" type="number" class="validate">
+                <label for="bres-x2">X2</label>
+              </div>
+              <div class="input-field col s12">
+                <input id="bres-y2" type="number" class="validate">
+                <label for="bres-y2">Y2</label>
+              </div>
+            </div>
+          </div>
+          <div class="card-action">
+            <button class="btn waves-effect waves-light btn-block" id="btn-buat-bresenham" name="action" href="#row-table">Submit 
+            </button>
+            <button class="btn waves-effect waves-light red" id="btn-reset" name="action">reset
+              
+            </button>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    </div>
+
+    <div class="row blue z-depth-3" id="row-table">
+      <center>
+        <h1 class="orange-text">Hasil Citra Garis</h1>
+        <h2> 50 x 50 </h2>
+      </center>
+      <div class="col s12">
+        <table class="table" id="tabel"></table>
+      </div>
+    </div>
+
+    <footer class="page-footer orange">
+      <div class="container">
+        <div class="row" >
+          <div class="col l6 s12">
+            <h5 class="white-text">GRAFIKA DAN KOMPUTER</h5>
+            <p class="grey-text text-lighten-4">TEKNIK INFORMATIKA</p>
+            <p class="grey-text text-lighten-4">UIN SUNAN GUNUNG DJATI BANDUNG</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+        Made by <a class="orange-text text-lighten-3">Angelyna&Pramadita</a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/jquery.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
